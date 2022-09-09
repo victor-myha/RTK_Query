@@ -1,3 +1,19 @@
 .root {
-  background-color: azure;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .rightColumn {
+    width: 50%;
+    height: 20%;
+    display: grid;
+    grid-template-rows: repeat(3, 2fr);
+    grid-gap: 5px;
+    padding: 20px;
+
+    button {
+      cursor: pointer;
+    }
+  }
 }
